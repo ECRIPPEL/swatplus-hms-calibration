@@ -6,7 +6,7 @@ phase: 3
 script_version: "phase3"
 
 # --- Paths and execution ---
-project_path: "C:/uru"
+project_path: "C:/path/to/your/swatplus/txtinout"
 start_date: "1979-01-01"
 end_date: "1980-12-31"
 warmup: 1
