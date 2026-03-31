@@ -1,0 +1,29 @@
+# ── R ────────────────────────────────────────────────────────────────────────
+.Rhistory
+.RData
+.Rproj.user/
+*.Rproj
+*.Rcheck/
+
+# ── SWAT+ model data (large / machine-specific) ──────────────────────────────
+# TxtInOut folders
+TxtInOut/
+*/TxtInOut/
+
+# Observed data CSVs (contain local data, not part of the framework)
+obs_flow_*.csv
+
+# ── Calibration / GSA outputs (generated at runtime) ─────────────────────────
+GSA_phase*/
+SOFT_phase*/
+HARD_phase*/
+*.rds
+
+# ── Debug folder ─────────────────────────────────────────────────────────────
+debug/
+
+# ── OS / editor ──────────────────────────────────────────────────────────────
+.DS_Store
+Thumbs.db
+desktop.ini
+.vscode/
