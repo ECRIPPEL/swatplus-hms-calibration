@@ -1,18 +1,30 @@
-satplus-hms-calibration
+# swatplus-hms-calibration
 
-HIERARCHICAL MULTI-SCALE CALIBRATION OF SWAT+ 
-GUIDED BY ADAPTIVE SENSITIVITY ANALYSIS
+A hierarchical multi-scale SWAT+ calibration framework using LH-OAT Morris 
+screening and progressive parameter narrowing across three phases.
 
 
-How to use:
+## Workflow
 
-# Run a specific phase:
-Rscript run_gsa.R config/phase1.yaml
-Rscript run_cal.R config/phase1.yaml
+GSA Phase 1 → CAL Phase 1 → GSA Phase 2 → CAL Phase 2 → GSA Phase 3 → CAL Phase 3
 
-# Or run everything sequentially:
+
+- **Phase 1** — Annual water balance (soft calibration via behavioural filtering)
+- **Phase 2** — Monthly streamflow (hard calibration using NSE, KGE, and PBIAS)
+- **Phase 3** — Daily streamflow (hard calibration using NSE, KGE, and PBIAS)
+
+## Quick Start
+
+```r
+setwd("C:/path/to/your/swatplus-hms-calibration")
 source("master.R")
 
-# Resume from a specific step (e.g., GSA2 = step 3):
-START_FROM <- 3
-source("master.R")
+Requirements
+R = 4.3.3, SWAT+ >= swatplus-61.0.2.61-ifx-win_amd64-Rel, RTools = 4.3
+R packages: SWATrunR, yaml, dplyr, hydroGOF, ggplot2, lhs, and others
+
+This framework relies on [SWATrunR](https://github.com/chrisschuerz/SWATrunR) 
+by Christoph Schürz for running SWAT+ simulations in R.
+
+Documentation
+See HOW_TO_USE.md for full setup, configuration, and troubleshooting.
