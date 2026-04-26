@@ -1,0 +1,30 @@
+cff-version: 1.2.0
+message: "If you use this software, please cite it using the metadata below."
+title: "swatplus-hms-calibration: Hierarchical Multi-Scale Calibration of SWAT+ guided by Adaptive Sensitivity Analysis"
+abstract: >-
+  An R-based framework for hierarchical multi-scale calibration of SWAT+
+  hydrological models. Couples Morris (LH-OAT) sensitivity screening
+  re-executed at each temporal scale (annual water balance, monthly
+  streamflow, daily streamflow) with sigma-informed parameter-range
+  narrowing and cross-phase robustness filtering to manage equifinality.
+  Built on top of SWATrunR.
+type: software
+authors:
+  - family-names: "Rippel"
+    given-names: "Elzon Cassio"
+    orcid: "https://orcid.org/0000-0002-8391-4435"
+    affiliation: "Universidade Federal de Santa Maria (UFSM)"
+version: "1.0.0"
+date-released: "2026-04-26"
+license: MIT
+repository-code: "https://github.com/ECRIPPEL/swatplus-hms-calibration"
+keywords:
+  - SWAT+
+  - hierarchical calibration
+  - sensitivity analysis
+  - Morris method
+  - LH-OAT
+  - hydrology
+  - equifinality
+  - water balance
+  - SWATrunR
