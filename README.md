@@ -1,6 +1,10 @@
-# How to Use — swatplus-hms-calibration
+# swatplus-hms-calibration
 
-A step-by-step guide for running the hierarchical multi-scale SWAT+ calibration framework.
+**Hierarchical Multi-Scale Calibration of SWAT+ guided by Adaptive Sensitivity Analysis.**
+
+A reproducible R-based framework for calibrating SWAT+ hydrological models across three temporal scales (annual water balance → monthly streamflow → daily streamflow), using Morris sensitivity screening re-executed at each phase, σ-informed parameter-range narrowing, and cross-phase robustness filtering to manage equifinality. Built on top of [SWATrunR](https://chrisschuerz.github.io/SWATrunR/).
+
+If you use this software in research, please see [Citation](#citation) below.
 
 ---
 
@@ -663,3 +667,27 @@ source("run_cal.R")
 # ---- Load saved results ----
 res <- readRDS("C:/path/to/your/swatplus/txtinout/HARD_phase2_v1/resultado_cal_phase2.rds")
 ```
+
+---
+
+## Citation
+
+If you use this software, please cite it via the metadata in [`CITATION.cff`](CITATION.cff). After a tagged release, a versioned DOI is automatically minted by Zenodo and shown as a badge at the top of this README.
+
+GitHub natively renders `CITATION.cff` as a "Cite this repository" button on the repository landing page (top right), with ready-to-paste BibTeX/APA strings.
+
+---
+
+## Contact
+
+For technical questions, bug reports, or feature requests, please open an issue on GitHub: <https://github.com/ECRIPPEL/swatplus-hms-calibration/issues>.
+
+Author: Elzon Cassio Rippel — ORCID [0000-0002-8391-4435](https://orcid.org/0000-0002-8391-4435).
+
+---
+
+## License
+
+Released under the MIT License — see [`LICENSE`](LICENSE) for the full text.
+
+This tool depends on [SWAT+](https://swat.tamu.edu/software/plus/) and [SWATrunR](https://chrisschuerz.github.io/SWATrunR/), which are distributed under their own licenses.
