@@ -1,5 +1,8 @@
 # swatplus-hms-calibration
 
+[![DOI](https://zenodo.org/badge/DOI/10.5281/zenodo.19793607.svg)](https://doi.org/10.5281/zenodo.19793607)
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](LICENSE)
+
 **Hierarchical Multi-Scale Calibration of SWAT+ guided by Adaptive Sensitivity Analysis.**
 
 A reproducible R-based framework for calibrating SWAT+ hydrological models across three temporal scales (annual water balance → monthly streamflow → daily streamflow), using Morris sensitivity screening re-executed at each phase, σ-informed parameter-range narrowing, and cross-phase robustness filtering to manage equifinality. Built on top of [SWATrunR](https://chrisschuerz.github.io/SWATrunR/).
